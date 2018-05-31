@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="ASCII"?>
 <anttasks:AntTask xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:anttasks="http://org.eclipse.fx.ide.jdt/1.0" buildDirectory="${project}/build">
   <deploy>
+<<<<<<< HEAD
     <application name="PJM_Project"/>
+=======
+    <application name="pjm_projekt"/>
+>>>>>>> branch 'master' of https://github.com/Ven420/PJM_Project.git
     <info/>
   </deploy>
   <signjar/>
