@@ -10,12 +10,14 @@ import javafx.util.Duration;
 
 public class TimerButton extends Buttons
 {
-   static Integer timerSec = 10;
 
-   public TimerButton()
+   private Integer timerSec;
+
+   public TimerButton(Integer i)
    {
-      super(new Button("Countdown: "+ timerSec.toString()));
 
+      super(new Button("Countdown: " + i.toString()));
+      this.timerSec = i;
    }
 
    public KeyFrame getFrame()
@@ -25,7 +27,7 @@ public class TimerButton extends Buttons
             {
                @Override
                public void handle(ActionEvent event)
-               {                
+               {
                   timerSec--;
                   getButton().setText("Countdown: " + timerSec.toString());
                   if (timerSec <= 0)
