@@ -11,9 +11,10 @@ public class Main extends Application
    public void start(Stage primaryStage)
    {
       Box hBox = new Box();
-      hBox.addTimerButton(new TimerButton());
+      hBox.addTimerButton(new TimerButton(10));
+      hBox.addTimerButton(new TimerButton(10));
 
-      Scene scene = new Scene(hBox.getHBox());
+      Scene scene = new Scene(hBox.getVBox());
       primaryStage.setTitle("Card Layout");
       primaryStage.setScene(scene);
       primaryStage.show();
