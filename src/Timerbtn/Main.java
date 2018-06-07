@@ -14,7 +14,7 @@ public class Main extends Application
       Box vBox = new Box();
       vBox.addTimerButtonV(new TimerButton(10));
       vBox.addTimerButtonV(new TimerButton(10));
-      vBox.addButtonV(new Button());
+      vBox.addButtonV(new Button("Arsch"));
 
       Scene scene = new Scene(vBox.getVBox());
       primaryStage.setTitle("Card Layout");
